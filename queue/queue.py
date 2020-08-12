@@ -61,5 +61,4 @@ class Queue:
         if self.size > 0:
             self.size -= 1
             return self.storage.remove_head()
-        else:
-            pass
+        return None

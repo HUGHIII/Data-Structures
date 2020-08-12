@@ -29,9 +29,8 @@ from singly_linked_list import Node, LinkedList
 #     def pop(self):
 #         if self.size > 0 :
 #             self.size -= 1
-#             self.storage.pop()
-#         else:
-#             pass
+#             return self.storage.pop()
+#         return None
 
 
 class Stack:
@@ -50,5 +49,4 @@ class Stack:
         if self.size > 0 :
             self.size -= 1
             return self.storage.remove_tail()
-        else:
-            pass
+        return None
