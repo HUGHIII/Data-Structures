@@ -9,12 +9,12 @@ class ListNode:
         self.next = next
 
 
-        def delete(self):
+    def delete(self):
         if self.prev:
             self.prev.next = self.next
         if self.next:
             self.next.prev = self.prev
-            
+        
 """
 Our doubly-linked list class. It holds references to 
 the list's head and tail nodes.
@@ -108,7 +108,7 @@ class DoublyLinkedList:
     List and inserts it as the new tail node of the List.
     """
     def move_to_end(self, node):
-           def move_to_end(self, node):
+           
         if node is self.tail:
             return
         value = node.value
@@ -125,7 +125,7 @@ class DoublyLinkedList:
     order of the other elements of the List.
     """
     def delete(self, node):
-              if not self.head and not self.tail:
+        if not self.head and not self.tail:
             return
         
         self.length -= 1
@@ -146,7 +146,7 @@ class DoublyLinkedList:
     in the List.
     """
     def get_max(self):
-           value = self.head.value
+        value = self.head.value
         current_node = self.head
 
         while current_node is not None:
